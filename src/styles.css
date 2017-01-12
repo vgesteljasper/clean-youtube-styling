@@ -1,0 +1,26 @@
+#yt-masthead {
+	position: relative;
+}
+
+#yt-masthead-content {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 650px;
+}
+
+#masthead-search-terms, .yt-uix-button {
+	border: none;
+}
+
+#masthead-search-terms, .yt-uix-button, .yt-uix-button-default:hover {
+	box-shadow: none;
+}
+
+.yt-uix-button-default:hover {
+	background-color: #f2f2f2;
+}
+
+#masthead-search-terms {
+	background-color: #fafafa;
+}
