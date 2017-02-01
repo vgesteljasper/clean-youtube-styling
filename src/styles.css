@@ -1,25 +1,187 @@
+body {
+	background-color: #fafafa;
+}
+
 #yt-masthead-container {
-	background-color: #CC181E;
 	padding-bottom: 14px;
 	padding-top: 14px;
 	position: relative;
-	background: linear-gradient(10deg, #CC181E, MediumVioletRed);
+	background-color: #CC181E;
+}
+
+#masthead-positioner-height-offset {
+	height: 80px !important;
+}
+
+.sitewide-ticker-visible #appbar-guide-menu {
+	margin-top: 97px;
+}
+
+.yt-thumb-48 {
+	border-radius: 100%;
+}
+
+.load-more-button:hover {
+	background-color: white !important;
+}
+
+.yt-uix-button,
+.addto-watch-later-button,
+.yt-uix-button-subscribe-branded+.yt-subscription-button-subscriber-count-branded-horizontal,
+.comment-renderer-author-comment-badge.creator {
+	border-radius: 0 !important;
+}
+
+.like-button-renderer-like-button:before,
+.like-button-renderer-dislike-button:before,
+#comment-section-renderer .sprite-like:before,
+#comment-section-renderer .sprite-dislike:before {
+	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/upload_button.png) 0 0;
+	background-size: 14px 16px;
+	background-position: center;
+	filter: invert(1);
+}
+
+#comment-section-renderer .sprite-like:before,
+#comment-section-renderer .sprite-dislike:before {
+	background-size: 12px 13px;
+	opacity: .3;
+}
+
+#comment-section-renderer .sprite-dislike:before {
+	background-position: center top;
+}
+
+.like-button-renderer-dislike-button:before,
+#comment-section-renderer .sprite-dislike:before{
+	transform: rotate(180deg);
+}
+
+.video-time, .video-time-overlay {
+	bottom: 0;
+	right: 0;
+}
+
+.video-time {
+	height: 16px;
+	line-height: 17px;
+}
+
+.yt-badge {
+	background-color: lightgrey;
+	border: 0;
+	height: 16px;
+	line-height: 17px;
+}
+
+.yt-badge-live {
+	background-color: #CC181E;
+	color: white;
+	border: 0;
+	height: 16px;
+	line-height: 17px;
+}
+
+.yt-uix-checkbox-on-off label {
+	width: 26px;
+}
+
+.autoplay-hovercard {
+	display: none;
+}
+
+.checkbox-on-off > label {
+	margin-right: 10px;
+}
+
+.yt-card .yt-uix-tabs .yt-uix-button:hover {
+	border-bottom: 1px solid #CC181E;
+}
+
+.yt-uix-checkbox-on-off .unchecked,
+.yt-uix-checkbox-on-off input[type=checkbox]:checked+label .checked {
+	width: 13px;
+}
+
+.addto-watch-later-button-success:before {
+	width: 20px;
+	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/tick_off.png);
+	background-position: center;
+	background-size: 12px auto;
+	opacity: 1;
+}
+
+.yt-uix-checkbox-on-off .checked:before {
+	height: 10px;
+	background-size: 8px auto;	
+}
+
+.addto-watch-later-button-success {
+	background-color: #68B867 !important;
+	background-image: none;
 }
 
 .yt-uix-button-subscribe-branded {
-	background: linear-gradient(45deg, #CC181E, MediumVioletRed);
-	border-top-left-radius: 12px;
-	border-bottom-left-radius: 12px;
+	border-radius: 0;
 	padding: 0 8px 0 10px !important;
+	background-color: #CC181E;
 }
 
-.yt-subscription-button-subscriber-count-branded-horizontal {
-	border-top-right-radius: 12px;
-	border-bottom-right-radius: 12px;
+#footer-main #yt-picker-language-button,
+#footer-main #yt-picker-country-button,
+#footer-main #yt-picker-safetymode-button,
+#footer-main .footer-history,
+#footer-main #google-help {
+	background: linear-gradient(20deg, #fafafa, #f2f2f2);
+	color: black;
+	box-shadow: none !important;
+}
+
+.branded-page-box {
+	padding: 25px 15px;
+}
+
+.channel-header .yt-subscription-button-subscriber-count-branded-horizontal,
+.channel-header .yt-uix-button-subscribed-branded,
+.channel-header .yt-uix-subscription-notifications-highlights {
+	border: none;
+	background-color: #b8b8b8;
+	color: white;
+}
+
+.channel-header .yt-uix-subscription-preferences-button:before {
+	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/bell_button.png) center;
+	background-size: 12px auto;
+	opacity: 1;
+}
+
+.channel-header .yt-uix-subscription-preferences-button:hover {
+	background-color: #444;
+}
+
+.channel-header .yt-uix-button-subscribed-branded:before {
+	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/tick_off.png);
+	background-position: center 1px;
+	background-size: 12px auto;
+}
+
+.channel-header .yt-uix-button-subscribed-branded.hover-enabled:hover:before {
+	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/close.png) center;
+	background-size: 10px auto;
+}
+
+.yt-uix-button-icon-dismissal {
+	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/close.png) center;
+	background-size: 12px auto;
+	filter: invert(1);
+}
+
+.channel-header .yt-subscription-button-subscriber-count-branded-horizontal {
+	border: 1px solid #b8b8b8 !important;
 }
 
 .resume-playback-progress-bar {
-	background: linear-gradient(45deg, #CC181E, MediumVioletRed);
+	background-color: #CC181E;
 }
 
 .resume-playback-background {
@@ -34,11 +196,14 @@
 	width: 650px;
 }
 
-#masthead-search-terms, .yt-uix-button {
+#masthead-search-terms,
+.yt-uix-button {
 	border: none;
 }
 
-#masthead-search-terms, .yt-uix-button, .yt-uix-button-default:hover {
+#masthead-search-terms,
+.yt-uix-button,
+.yt-uix-button-default:hover {
 	box-shadow: none;
 }
 
@@ -47,47 +212,101 @@
 }
 
 #masthead-search-terms {
-	background-color: rgba(255, 255, 255, .5);
+	background-color: rgba(255, 255, 255, .2);
 	height: 40px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
 }
 
 #masthead-search-terms input {
-	padding: 2px 20px;
 	color: white;
+	height: 40px;
+	padding: 0 20px;
 }
 
-input#masthead-search-term::-webkit-input-placeholder,
-input#masthead-search-term:-moz-placeholder,
-input#masthead-search-term::-moz-placeholder,
-input#masthead-search-term:-ms-input-placeholder {
-   color: white !important;
+#yt-masthead-user .yt-masthead-user-icon {
+	border-radius: 28px !important;
 }
+
+#yt-masthead-user .yt-masthead-user-icon,
+#yt-masthead-user .yt-masthead-user-icon img,
+.yt-thumb-27 {
+	width: 28px;
+}
+
+#yt-masthead-user .yt-masthead-user-icon img {
+	height: 28px;
+}
+
+#yt-masthead-user #yt-masthead-notifications-button {
+	width: 42px;	
+}
+
+input#masthead-search-term::-webkit-input-placeholder {
+	color: #f4f4f4;
+	text-transform: lowercase;
+}
+input#masthead-search-term::-moz-placeholder {
+    color: #f4f4f4;
+    opacity: 1;
+	text-transform: lowercase;
+}
+input#masthead-search-term:-moz-placeholder {
+    color: #f4f4f4;
+    opacity: 1;
+	text-transform: lowercase;
+}
+input#masthead-search-term:-ms-input-placeholder {
+    color: #f4f4f4;
+	text-transform: lowercase;
+}
+
 
 #masthead-search .search-btn-component {
 	height: 40px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	background-color: rgba(255, 255, 255, .5);
+	background-color: rgba(255, 255, 255, .2);
 	transition: background-color .2s;
+	border-radius: 0;
 }
 
 #masthead-search .search-btn-component:hover {
-	background-color: rgba(255, 255, 255, .7);
+	background-color: rgba(255, 255, 255, .3);
 }
 
-#yt-masthead #logo-container .logo {
+#masthead-search .search-btn-component .yt-uix-button-content {
+	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/magnifier.png) 0 0;
+	background-size: cover;
+}
+
+#yt-masthead #logo-container .logo,
+#footer-logo .footer-logo-icon {
 	width: 44px;
 	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/youtube_button.png) 0 0;
 	background-size: auto 30px;
+}
+
+#footer-logo .footer-logo-icon {
+	filter: invert(.3);
+}
+
+.comment-section-renderer-paginator,
+.comment-section-renderer-paginator:hover {
+	background-image: none;
+	transition: background-color .1s;
+}
+
+.guide-item .display-name {
+	font-size: 12px;
+}
+
+.comment-section-renderer-paginator:hover {
+	background-color: lightgrey !important;
 }
 
 #yt-masthead #logo-container span.content-region {
 	color: #f2f2f2;
 }
 
-.yt-uix-button-icon-appbar-guide, #masthead-positioner:hover .yt-uix-button-icon-appbar-guide {
+.yt-uix-button-icon-appbar-guide,
+#masthead-positioner:hover .yt-uix-button-icon-appbar-guide {
 	background: no-repeat url(https://vgesteljasper.github.io/clean-youtube-styling/src/img/hamburger_button.png) 0 0;
 	background-size: 16px auto;
 	background-position: center;
@@ -110,19 +329,22 @@ input#masthead-search-term:-ms-input-placeholder {
 	top: 0px;
 }
 
-#upload-btn, #sb-button-notify, .notifications-container {
+#upload-btn, #sb-button-notify,
+.notifications-container, #yt-masthead-notifications {
 	margin: 0 !important;
 	padding: 0 !important;
 	height: 30px !important;
 	width: 30px !important;
 }
 
-#upload-btn .yt-uix-button-icon-wrapper, #upload-btn .yt-uix-button-icon {
+#upload-btn .yt-uix-button-icon-wrapper,
+#upload-btn .yt-uix-button-icon {
 	width: 30px;
 	height: 30px;
 }
 
-#upload-btn, .notifications-container {
+#upload-btn,
+.notifications-container {
 	margin-right: 10px !important;;
 }
 
@@ -132,6 +354,12 @@ input#masthead-search-term:-ms-input-placeholder {
 
 #guide-container {
 	padding: 13px;
+}
+
+#gs_tti50 {
+	height: 40px;
+	padding: 0 10px;
+	line-height: 40px;
 }
 
 .gstl_50.gssb_c {
@@ -145,6 +373,19 @@ input#masthead-search-term:-ms-input-placeholder {
 	padding: 0 20px;
 }
 
-.gssb_a, .gssb_a td {
+.gsst_b,
+.gsst_a,
+.gsok_a {
+	height: 40px;
+}
+
+.gssb_a,
+.gssb_a td {
 	line-height: 30px;
+}
+
+#yt-masthead-user .sb-notif-on .yt-uix-button-content {
+	border: none !important;
+	background-color: white;
+	color: black;
 }
